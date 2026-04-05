@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006d36",
+                        "on-primary-fixed": "#00210c",
+                        "surface-variant": "#dee4db",
+                        "inverse-surface": "#2b322c",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#7ed99e",
+                        "secondary-fixed": "#9af6b8",
+                        "surface-tint": "#006d36",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#005025",
+                        "on-tertiary-container": "#554200",
+                        "surface-bright": "#f5fbf1",
+                        "secondary": "#006d3d",
+                        "on-secondary-fixed-variant": "#00522d",
+                        "on-secondary-container": "#047240",
+                        "surface": "#f5fbf1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00210f",
+                        "on-surface": "#171d17",
+                        "error": "#ba1a1a",
+                        "primary-container": "#50c878",
+                        "inverse-on-surface": "#ecf3e9",
+                        "tertiary-fixed-dim": "#f1c100",
+                        "tertiary-container": "#d8ad00",
+                        "surface-dim": "#d5dcd2",
+                        "surface-container-low": "#eff6ec",
+                        "background": "#f5fbf1",
+                        "primary-fixed-dim": "#66dd8b",
+                        "primary-fixed": "#83fba5",
+                        "on-background": "#171d17",
+                        "outline": "#6e7a6e",
+                        "tertiary-fixed": "#ffe08b",
+                        "surface-container": "#e9f0e6",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "on-tertiary-fixed": "#241a00",
+                        "tertiary": "#745b00",
+                        "surface-container-high": "#e3eae0",
+                        "inverse-primary": "#66dd8b",
+                        "surface-container-highest": "#dee4db",
+                        "on-surface-variant": "#3e4a3f",
+                        "secondary-container": "#97f3b5",
+                        "on-primary-fixed-variant": "#005227",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bdcabc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    display: inline-block;
+    line-height: 1
+    }
+.jepara-pattern {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDUhw4I8r-akCoQWugopirYIWvgeiRFaTcfiGC_D_SKdBPGUJSZQCV3GYvnkEliwmqQ2qRJR7IdIwka9AlWuDwZv2370-oSVdcjKrrKNEzDX71CRsp04inuWblkOY2t_SRQDLG5wY3d8mwzG3Tnzrh_dZ1E1bzOCvKhNplEjj8JEeKc-HXQpcvGCUNZm9XFd7xPoDB401Vpozo_kthJOcTtmqf7EsuZgaz1OxswX7HNC6at02orueZbw2mm76x19Y966nA_XxwPgCZX);
+    opacity: 0.02
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col relative overflow-x-hidden">
+<div class="fixed inset-0 jepara-pattern pointer-events-none"></div>
+<header class="bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-100/50 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img alt="Driver profile" class="w-12 h-12 rounded-full object-cover border-2 border-primary-container" data-alt="Close-up portrait of a friendly Indonesian delivery driver wearing a green uniform with a professional smile and natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZUC-kv_EHTrMG_K5BMUKMRO7pDR8NNq-Yx0Wh1Ymh47y9GYPhNCZkwtlPPXoIf50vTa7YdldSYkImf5uRYjakebPMzeYUd8AX5ROIp2QSoI_-31npJv6fZSnxTyhy_F7H0Wn2pVULgTeuW7WCMv1rgI3FMV_Fqw7a31wqPamyq4aQ5R80KOwt0CNjNrS4FhwM2wJSilEBy2jEt6g-b2iAQvVCeGBKs3pWcwvBopT2ab9Sj-8ziQeNwc4RUalP2ltT0QIOyJeSWGZ8"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-surface rounded-full shadow-sm"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-lg tracking-tight text-on-surface">Budi Santoso</span>
+<span class="text-xs font-semibold text-emerald-600 tracking-wide">Mitra GEMA • Yamaha NMAX</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:bg-emerald-100/50 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">call</span>
+</button>
+<button class="hover:bg-emerald-100/50 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">more_vert</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col px-4 py-6 gap-6 overflow-y-auto mb-32">
+<div class="flex justify-center">
+<span class="bg-surface-container text-on-surface-variant px-4 py-1 rounded-full text-xs font-medium">Hari Ini</span>
+</div>
+<div class="flex flex-col gap-1 max-w-[85%] self-start">
+<div class="bg-surface-container-highest text-on-surface px-4 py-3 rounded-2xl rounded-tl-none shadow-sm">
+<p class="text-sm leading-relaxed">Halo Kak, pesanan sudah saya ambil ya. Mohon ditunggu.</p>
+</div>
+<span class="text-[10px] text-on-surface-variant ml-1 font-medium">14:20</span>
+</div>
+<div class="flex flex-col gap-1 max-w-[85%] self-end">
+<div class="bg-primary text-on-primary px-4 py-3 rounded-2xl rounded-tr-none shadow-md">
+<p class="text-sm leading-relaxed">Siap Pak Budi. Nanti taruh di depan pagar saja ya, kebetulan saya lagi rapat.</p>
+</div>
+<div class="flex items-center justify-end gap-1 mr-1">
+<span class="text-[10px] text-on-surface-variant font-medium">14:22</span>
+<span class="material-symbols-outlined text-[12px] text-primary" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 max-w-[85%] self-start">
+<div class="bg-surface-container-highest text-on-surface px-4 py-3 rounded-2xl rounded-tl-none shadow-sm">
+<p class="text-sm leading-relaxed">Baik Kak, segera saya antar. Apakah ada instruksi khusus untuk penempatan barangnya?</p>
+</div>
+<span class="text-[10px] text-on-surface-variant ml-1 font-medium">14:23</span>
+</div>
+<div class="mt-4 p-4 bg-surface-container-low rounded-xl border-none">
+<div class="flex items-start gap-3">
+<div class="bg-secondary-container p-2 rounded-lg">
+<span class="material-symbols-outlined text-on-secondary-container">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-on-surface">Status Pengiriman</span>
+<span class="text-[11px] text-on-surface-variant">Kurir sedang menuju lokasi Anda (2.4 km)</span>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 w-full z-40">
+<div class="flex flex-col gap-3 px-4 pb-4 bg-gradient-to-t from-surface via-surface to-transparent pt-8">
+<div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
+<button class="whitespace-nowrap bg-surface-container-lowest border border-outline-variant/30 text-on-surface-variant px-4 py-2 rounded-full text-xs font-semibold hover:bg-emerald-50 transition-colors">
+                    Oke, terima kasih!
+                </button>
+<button class="whitespace-nowrap bg-surface-container-lowest border border-outline-variant/30 text-on-surface-variant px-4 py-2 rounded-full text-xs font-semibold hover:bg-emerald-50 transition-colors">
+                    Titip di satpam ya
+                </button>
+<button class="whitespace-nowrap bg-surface-container-lowest border border-outline-variant/30 text-on-surface-variant px-4 py-2 rounded-full text-xs font-semibold hover:bg-emerald-50 transition-colors">
+                    Sesuai titik Map
+                </button>
+</div>
+<div class="bg-surface-container-lowest shadow-lg rounded-2xl p-2 flex items-center gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-sm py-2" placeholder="Ketik pesan..." type="text"/>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">sentiment_satisfied</span>
+</button>
+<button class="bg-primary text-on-primary w-10 h-10 rounded-xl flex items-center justify-center shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+<nav class="bg-emerald-50/80 backdrop-blur-md fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-4px_24px_rgba(0,109,54,0.06)] rounded-t-3xl border-t border-emerald-900/5">
+<a class="flex flex-col items-center justify-center text-zinc-500 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-xs font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-inter text-xs font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-800 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-inter text-xs font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-xs font-semibold">Profile</span>
+</a>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

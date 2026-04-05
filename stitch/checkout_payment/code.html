@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#006d36",
+                    "on-primary-fixed": "#00210c",
+                    "surface-variant": "#dee4db",
+                    "inverse-surface": "#2b322c",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#7ed99e",
+                    "secondary-fixed": "#9af6b8",
+                    "surface-tint": "#006d36",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#005025",
+                    "on-tertiary-container": "#554200",
+                    "surface-bright": "#f5fbf1",
+                    "secondary": "#006d3d",
+                    "on-secondary-fixed-variant": "#00522d",
+                    "on-secondary-container": "#047240",
+                    "surface": "#f5fbf1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00210f",
+                    "on-surface": "#171d17",
+                    "error": "#ba1a1a",
+                    "primary-container": "#50c878",
+                    "inverse-on-surface": "#ecf3e9",
+                    "tertiary-fixed-dim": "#f1c100",
+                    "tertiary-container": "#d8ad00",
+                    "surface-dim": "#d5dcd2",
+                    "surface-container-low": "#eff6ec",
+                    "background": "#f5fbf1",
+                    "primary-fixed-dim": "#66dd8b",
+                    "primary-fixed": "#83fba5",
+                    "on-background": "#171d17",
+                    "outline": "#6e7a6e",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface-container": "#e9f0e6",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary": "#745b00",
+                    "surface-container-high": "#e3eae0",
+                    "inverse-primary": "#66dd8b",
+                    "surface-container-highest": "#dee4db",
+                    "on-surface-variant": "#3e4a3f",
+                    "secondary-container": "#97f3b5",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdcabc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .jepara-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='%23006d36' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased jepara-pattern min-h-screen">
+<!-- Top Navigation (Shell Suppressed for Focused Checkout) -->
+<header class="bg-emerald-50/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-100/50 transition-colors p-2 rounded-full active:scale-95">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-emerald-800 text-xl">Checkout</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a professional man with a kind smile, studio lighting, clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjB_r2AKi1Lt74Pc79hnzjlT2VbnL_NQLhsLh5g730C646B_qHWJxzYXyrJuvgBTFL29GWG-1WULxXKq6rxPToYSv3GTLxrq2zCakFq1thNm-hZvh9UJY4-zPylNNK4ExJK_CHXgA6zHI8QU8kLmksuJ4r1nernqt7oPNKHivqTqQfgC-Qd2U-XLB9onsybZrbjAvFC44ByWNJzZAP982WWaSFZ87YuGRL6Gfdt1mCSWSmYIIfiOKkkNoSmnllOPq23dk8U63agpVX"/>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-4 py-8 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Left Column: Order Details -->
+<div class="md:col-span-7 space-y-6">
+<!-- Shipping Address Section -->
+<section class="bg-surface-container-low p-6 rounded-xl space-y-4">
+<div class="flex items-center gap-2 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h2 class="font-headline font-bold uppercase tracking-wider text-xs">Alamat Pengiriman</h2>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-on-surface">Budi Santoso</p>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">
+                                    Jl. Senopati No. 12, Kebayoran Baru<br/>
+                                    Jakarta Selatan, DKI Jakarta 12190
+                                </p>
+<p class="text-sm text-on-surface-variant mt-2">+62 812-3456-7890</p>
+</div>
+<button class="text-primary font-semibold text-sm hover:underline">Change</button>
+</div>
+</div>
+</section>
+<!-- Order Summary Items -->
+<section class="bg-surface-container-low p-6 rounded-xl space-y-4">
+<div class="flex items-center gap-2 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+<h2 class="font-headline font-bold uppercase tracking-wider text-xs">Ringkasan Pesanan</h2>
+</div>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex gap-4">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Jepara Carving" class="w-full h-full object-cover" data-alt="Handcrafted intricate Jepara wood carving detail on a dark mahogany wood piece, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOrEgynla-DXnZRieOFc05ExaemgnpQhPl62UVOi5i_HvkyPCqN0mzRw5HUUQeu05HkSb89yDJAZYyVyNwzHmRytwDY8hz7BcSLI24aVimWdQSKsn1EeRIyDfux3fV-3FHnU9pvT0a7wzHMph--1x0WWm42RzxI2vQdBKiixWf-WW5d_QI3eU--r0fA9Ix2HFv_2QnLACDV5CFAevHqVdGq_3F1N7oPFYXWsovXEQzg5rnQhnIfv4lE_Gx4kNAVlYl-rd1x47JV6dA"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between">
+<h3 class="font-bold text-on-surface">Ukiran Kayu Jati Motif Teratai</h3>
+<p class="font-bold text-primary">Rp450.000</p>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Variasi: Natural Finish, 30cm</p>
+<p class="text-sm mt-2 text-on-surface">1x Item</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex gap-4">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Ceramic Vase" class="w-full h-full object-cover" data-alt="Handmade emerald green ceramic vase with organic texture, soft minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4_Jr7l0P1QYiTskBwoHBQm0OIKzecAR6mSGK8mYj0JE9fXqlttzkC9ZKw6zpHuTwGtVj8IjmTBjWQ7IBIeHgNw1lvrkYZGlw-5CdY5RF4Svipfrc7bFdeUFOxQxWWtDP8oUQtrQaLsxQNLYINMBeYECsv5oidcbrVknnVI2x0eoQKITZFjME1GUDm4RlXBWjh5RJyLUaIh_P1euPdUrzFfGpUBbWoHTEOWWm1ifuepkSIWGvTkE0P_aqVNo8yv3WB6URP6ilqTW5I"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between">
+<h3 class="font-bold text-on-surface">Vas Keramik GEMA Emerald</h3>
+<p class="font-bold text-primary">Rp125.000</p>
+</div>
+<p class="text-xs text-on-surface-variant mt-1">Variasi: Medium Size</p>
+<p class="text-sm mt-2 text-on-surface">1x Item</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Payment & Totals -->
+<div class="md:col-span-5 space-y-6">
+<!-- Payment Method -->
+<section class="bg-surface-container-low p-6 rounded-xl space-y-4">
+<div class="flex items-center gap-2 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h2 class="font-headline font-bold uppercase tracking-wider text-xs">Metode Pembayaran</h2>
+</div>
+<div class="space-y-3">
+<!-- Xendit Option -->
+<label class="relative flex items-center p-4 bg-surface-container-lowest rounded-lg cursor-pointer border-2 border-transparent has-[:checked]:border-primary transition-all">
+<input checked="" class="hidden peer" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-primary mr-3">account_balance_wallet</span>
+<div class="flex-grow">
+<p class="font-bold text-on-surface">Cashless (Xendit)</p>
+<p class="text-xs text-on-surface-variant">Transfer Bank, E-Wallet, Kartu Kredit</p>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-outline peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</label>
+<!-- COD Option -->
+<label class="relative flex items-center p-4 bg-surface-container-lowest rounded-lg cursor-pointer border-2 border-transparent has-[:checked]:border-primary transition-all">
+<input class="hidden peer" name="payment" type="radio"/>
+<span class="material-symbols-outlined text-on-surface-variant mr-3">handshake</span>
+<div class="flex-grow">
+<p class="font-bold text-on-surface">Cash on Delivery (COD)</p>
+<p class="text-xs text-on-surface-variant">Bayar tunai saat barang sampai</p>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-outline peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Pricing Breakdown -->
+<section class="bg-surface-container-high p-6 rounded-xl space-y-4 shadow-sm border border-primary/5">
+<h2 class="font-headline font-bold text-on-surface">Rincian Pembayaran</h2>
+<div class="space-y-3 text-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal Produk</span>
+<span class="text-on-surface">Rp575.000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Biaya Pengiriman</span>
+<span class="text-on-surface">Rp15.000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Biaya Layanan Platform</span>
+<span class="text-on-surface">Rp2.000</span>
+</div>
+<div class="pt-3 mt-3 border-t border-outline-variant flex justify-between items-center">
+<span class="font-headline font-bold text-lg text-on-surface">Total Pembayaran</span>
+<span class="font-headline font-extrabold text-xl text-primary">Rp592.000</span>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary py-4 rounded-lg font-headline font-bold text-lg shadow-lg hover:brightness-110 active:scale-95 transition-all">
+                            Place Order
+                        </button>
+<p class="text-[10px] text-center text-on-surface-variant mt-4 leading-tight">
+                            Dengan menekan tombol di atas, Anda menyetujui <span class="text-primary underline">Syarat &amp; Ketentuan</span> GEMA.
+                        </p>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Contextual Success Tip (Eco-Tracker Chip replacement) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-40">
+<div class="bg-secondary-container/90 backdrop-blur-md px-6 py-2 rounded-full flex items-center gap-2 shadow-xl border border-white/20">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-on-secondary-container font-semibold text-xs tracking-wide">Pemesanan ini mendukung pengrajin lokal Jepara.</span>
+</div>
+</div>
+<!-- Bottom Navigation Suppressed for Checkout Flow as per Rules -->
+</body></html>

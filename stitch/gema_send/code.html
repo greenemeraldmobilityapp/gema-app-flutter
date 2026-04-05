@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEMA-Send | Logistics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .jepara-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='%23006d36' fill-opacity='0.04'/%3E%3C/svg%3E");
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006d36",
+                        "on-primary-fixed": "#00210c",
+                        "surface-variant": "#dee4db",
+                        "inverse-surface": "#2b322c",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#7ed99e",
+                        "secondary-fixed": "#9af6b8",
+                        "surface-tint": "#006d36",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#005025",
+                        "on-tertiary-container": "#554200",
+                        "surface-bright": "#f5fbf1",
+                        "secondary": "#006d3d",
+                        "on-secondary-fixed-variant": "#00522d",
+                        "on-secondary-container": "#047240",
+                        "surface": "#f5fbf1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00210f",
+                        "on-surface": "#171d17",
+                        "error": "#ba1a1a",
+                        "primary-container": "#50c878",
+                        "inverse-on-surface": "#ecf3e9",
+                        "tertiary-fixed-dim": "#f1c100",
+                        "tertiary-container": "#d8ad00",
+                        "surface-dim": "#d5dcd2",
+                        "surface-container-low": "#eff6ec",
+                        "background": "#f5fbf1",
+                        "primary-fixed-dim": "#66dd8b",
+                        "primary-fixed": "#83fba5",
+                        "on-background": "#171d17",
+                        "outline": "#6e7a6e",
+                        "tertiary-fixed": "#ffe08b",
+                        "surface-container": "#e9f0e6",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "on-tertiary-fixed": "#241a00",
+                        "tertiary": "#745b00",
+                        "surface-container-high": "#e3eae0",
+                        "inverse-primary": "#66dd8b",
+                        "surface-container-highest": "#dee4db",
+                        "on-surface-variant": "#3e4a3f",
+                        "secondary-container": "#97f3b5",
+                        "on-primary-fixed-variant": "#005227",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bdcabc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen jepara-pattern">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/80 backdrop-blur-md sticky top-0 z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="menu">menu</span>
+<h1 class="text-2xl font-black text-emerald-800 tracking-tight font-headline">GEMA</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-container/20 px-3 py-1 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-xs font-bold text-on-primary-container font-label">Send-Express</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-primary-container overflow-hidden">
+<img alt="User Profile" data-alt="Close up portrait of a smiling professional man in a clean office environment with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM78EJyDLGeZ3KTPiDv4kgK6o6eQRPTi1QdC-TJ7yZPU7LfgKunO1V-2q0Yx5WAu5ycGTYTIcB1ObSUkUFkLoCZhkKX_xNlJK2fdUdcSCJeNvdHEjXoKbajQe5VvwtxkSR9qB2LkLrfo_b4ZBD8-JzLBakQoQWwUWbIzkKKu2eSeOkw6jTtAheiZUBagTci9X1_fQ73WHhRDJBM8xVXk650-qcSwmADf8wJC29IOxwJ2N4isezXHjtAXZqDhpXg8X5sGs_yQWV2apq"/>
+</div>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pb-32 pt-8">
+<!-- Editorial Header -->
+<div class="mb-10">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface tracking-tighter leading-none mb-2">Kirim Paket</h2>
+<p class="text-on-surface-variant font-medium">Solusi logistik terpercaya langsung dari Jepara.</p>
+</div>
+<!-- Address Selection Section -->
+<section class="space-y-4 mb-8">
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm">
+<!-- Location Inputs -->
+<div class="relative space-y-6">
+<!-- Vertical Line Connector -->
+<div class="absolute left-3 top-8 bottom-8 w-0.5 border-l-2 border-dashed border-outline-variant/30"></div>
+<!-- Pickup -->
+<div class="flex gap-4 relative">
+<div class="z-10 mt-1">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px]" data-icon="location_on">location_on</span>
+</div>
+</div>
+<div class="flex-1">
+<label class="block text-xs font-bold text-primary uppercase tracking-widest mb-1 font-label">Lokasi Penjemputan</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/40 rounded-lg py-3 px-4 text-on-surface font-medium placeholder:text-outline-variant" placeholder="Masukkan alamat asal..." type="text" value="Jl. Kartini No. 42, Jepara"/>
+</div>
+</div>
+<!-- Destination -->
+<div class="flex gap-4 relative">
+<div class="z-10 mt-1">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]" data-icon="flag">flag</span>
+</div>
+</div>
+<div class="flex-1">
+<label class="block text-xs font-bold text-tertiary uppercase tracking-widest mb-1 font-label">Lokasi Tujuan</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/40 rounded-lg py-3 px-4 text-on-surface font-medium shadow-inner" placeholder="Tujuan pengiriman..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Map Preview -->
+<div class="h-48 rounded-xl overflow-hidden bg-surface-container-highest relative group">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="Top down aerial map view of a coastal city with intricate street patterns and lush greenery in soft emerald tones" data-location="Jepara, Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCffR9Vxt923XSqO88rMkcyASVZHscE8LP7-szTFLZa0KZMo6ju46J125W_QuUUEVkjD0jw7wGWddsbNPQR0RsIYXLv_t6kc9akZkh-9MdvqhVMz75RdGcN2IXAIWwRKkLJKamgFyYW3rEmtNw0O9Z7VtYNkz_39NcfrlERhu_2cZij-_hH2DttHtr3OiN5YuDBJoXCFkOSdUW0pkFHeyk4NOw-xFXq1y93MPPwINoLTGKarhBMUXZAPdB-pIgSDnj0p5RWrJIUGAO_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+<button class="absolute bottom-4 right-4 bg-surface-container-lowest text-primary font-bold px-4 py-2 rounded-full flex items-center gap-2 shadow-lg hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="map">map</span>
+<span class="text-xs">OPEN MAP</span>
+</button>
+</div>
+</section>
+<!-- Package Type Section -->
+<section class="mb-10">
+<h3 class="text-lg font-bold font-headline mb-4 px-1">Pilih Layanan</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Sameday -->
+<div class="bg-surface-container-lowest border-2 border-primary rounded-xl p-5 relative overflow-hidden group cursor-pointer">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h4 class="font-bold text-on-surface">Sameday Express</h4>
+<p class="text-xs text-on-surface-variant mb-4">Sampai di hari yang sama sebelum jam 8 malam.</p>
+<div class="text-xl font-black text-primary">Rp 25.000</div>
+</div>
+<!-- Next Day -->
+<div class="bg-surface-container-low rounded-xl p-5 group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 rounded-lg bg-outline-variant/20 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+</div>
+<h4 class="font-bold text-on-surface">Next-Day Delivery</h4>
+<p class="text-xs text-on-surface-variant mb-4">Kiriman sampai esok hari dengan harga hemat.</p>
+<div class="text-xl font-black text-on-surface">Rp 12.000</div>
+</div>
+</div>
+</section>
+<!-- Summary & Details -->
+<section class="bg-primary/5 rounded-2xl p-6 mb-8">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+<div class="flex-1">
+<h4 class="font-bold text-on-surface">Detail Barang</h4>
+<p class="text-xs text-on-surface-variant">Maksimal 10kg, Ukuran sedang</p>
+</div>
+<button class="text-primary font-bold text-xs font-label">EDIT</button>
+</div>
+<div class="space-y-3 pt-4 border-t border-primary/10">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Biaya Pengiriman</span>
+<span class="font-semibold">Rp 25.000</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant">Biaya Layanan</span>
+<span class="font-semibold">Rp 2.000</span>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-bold text-on-surface">Total Pembayaran</span>
+<span class="text-2xl font-black text-primary">Rp 27.000</span>
+</div>
+</div>
+</section>
+<!-- Main Action -->
+<button class="w-full py-5 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.98] transition-transform">
+            CONFIRM &amp; SEND
+        </button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-emerald-50/80 backdrop-blur-md rounded-t-3xl shadow-[0_-4px_24px_rgba(0,109,54,0.06)]">
+<a class="flex flex-col items-center justify-center text-zinc-500 hover:text-emerald-600 transition-all px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-xs font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-800 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="analytics" data-weight="fill" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-inter text-xs font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 hover:text-emerald-600 transition-all px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-inter text-xs font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 hover:text-emerald-600 transition-all px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-xs font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

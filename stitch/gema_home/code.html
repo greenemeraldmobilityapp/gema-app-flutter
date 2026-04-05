@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-secondary-fixed-variant": "#00522d",
+                    "inverse-primary": "#66dd8b",
+                    "on-surface-variant": "#3e4a3f",
+                    "on-secondary-fixed": "#00210f",
+                    "on-tertiary-container": "#554200",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ecf3e9",
+                    "tertiary": "#745b00",
+                    "primary-container": "#50c878",
+                    "surface-tint": "#006d36",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f5fbf1",
+                    "tertiary-fixed-dim": "#f1c100",
+                    "on-primary-fixed": "#00210c",
+                    "inverse-surface": "#2b322c",
+                    "tertiary-container": "#d8ad00",
+                    "on-surface": "#171d17",
+                    "surface-dim": "#d5dcd2",
+                    "surface": "#f5fbf1",
+                    "secondary": "#006d3d",
+                    "on-background": "#171d17",
+                    "primary": "#006d36",
+                    "surface-container-low": "#eff6ec",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "outline": "#6e7a6e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#005025",
+                    "surface-container": "#e9f0e6",
+                    "primary-fixed": "#83fba5",
+                    "primary-fixed-dim": "#66dd8b",
+                    "secondary-fixed-dim": "#7ed99e",
+                    "surface-variant": "#dee4db",
+                    "surface-container-highest": "#dee4db",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdcabc",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffe08b",
+                    "secondary-container": "#97f3b5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#9af6b8",
+                    "on-secondary-container": "#047240",
+                    "background": "#f5fbf1",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e3eae0",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f5fbf1;
+            /* Subtle Jepara Wood Carving Texture Simulation */
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0l10 30h30L55 50l10 30-25-20-25 20 10-30L0 30h30z' fill='%23006d36' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #006d36 0%, #50c878 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface pb-32">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md fixed top-0 sticky z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400" data-icon="menu">menu</span>
+<h1 class="text-2xl font-black text-emerald-800 dark:text-emerald-100 font-manrope font-bold tracking-tight">GEMA</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up professional portrait of a friendly man with short dark hair in a bright modern studio setting with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxBgmpoLuRounAr6Bdi9oBSQgSEvi_toiK4SV8Vf6AW6NPEMbBA_QbesKDhjeotGlfCHOxbl_o51i113b5-3ZQ-h-JkbGOwGnmI005V1NgEnxvdvcL7djWnUDVc6OyKXN9uuZDpWg6pA6RGgzSUT93bdNUk8N06c_evoc2J-pO551TMBpW0sOClfg4FUlVD4JGiL0XEi1mRGv52-NyqqB08rnlITMlF-JyUlMV7uPo5d2fRsFbDDHdj97k1CLkRARx4Hoq8opelNe0"/>
+</div>
+</div>
+</header>
+<main class="px-6 space-y-8 mt-4">
+<!-- Emerald Wallet Section -->
+<section class="relative overflow-hidden signature-gradient rounded-3xl p-6 text-on-primary shadow-lg">
+<!-- Subtle Texture overlay inside card -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cpath d=&quot;M20 0l5 15h15l-12 10 5 15-13-10-13 10 5-15L0 15h15z&quot; fill=&quot;%23ffffff&quot; fill-rule=&quot;evenodd&quot;/%3E%3C/svg%3E');"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="text-primary-fixed text-sm font-medium opacity-90 mb-1">Emerald Wallet Balance</p>
+<h2 class="text-3xl font-extrabold font-headline tracking-tight">Rp500.000</h2>
+</div>
+<span class="material-symbols-outlined text-white opacity-80" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm py-3 rounded-xl font-bold transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span>Top Up</span>
+</button>
+<button class="flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm py-3 rounded-xl font-bold transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+<span>Transfer</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold font-headline text-on-surface">Explore Services</h3>
+<span class="text-primary font-bold text-sm">View All</span>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<!-- Food -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="restaurant">restaurant</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Food</span>
+</div>
+<!-- Send -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="package_2">package_2</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Send</span>
+</div>
+<!-- Service -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="build">build</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Service</span>
+</div>
+<!-- Ride (Extra for Grid) -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="moped">moped</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Ride</span>
+</div>
+<!-- Car (Extra for Grid) -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="directions_car">directions_car</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Car</span>
+</div>
+<!-- Mart (Extra for Grid) -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-20 h-20 flex items-center justify-center bg-surface-container-lowest rounded-2xl shadow-sm hover:bg-emerald-50 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="shopping_basket">shopping_basket</span>
+</div>
+<span class="text-xs font-bold font-label text-on-surface-variant">GEMA-Mart</span>
+</div>
+</div>
+</section>
+<!-- Special Offers Section -->
+<section class="pb-8">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold font-headline text-on-surface">Special Offers for You</h3>
+<span class="material-symbols-outlined text-outline" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="flex overflow-x-auto gap-4 no-scrollbar -mx-6 px-6">
+<!-- Promo Banner 1 -->
+<div class="flex-shrink-0 w-[85%] bg-surface-container-low rounded-3xl overflow-hidden relative group">
+<img alt="Delicious Thai Food" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Exquisite presentation of Thai green curry and jasmine rice on a dark wooden table with elegant styling and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDFktEIj6kWlQ8Z-m3tlLJ_G-8LRouPOex_GX8GmYlYSNbXC-NAsStg3jVZCRpCDNrd9IMRuPOCtDIyZbeJ7cFbZEZf297-0EPUZ0kSORkwMs83vxNfvgscZEmflPA1twPHwn2-HYoKtTvDrlg7LzNCIRGcBCaAYw49ds6G0GOPnLMQE2Tn6kI1GoySsfqX_YsPzcChIc-2OkR6SsqDypSyaXx6q3-hcMBLskL4noPnr23m7fygcbr7JEZt0KP5yshTRyepXwPMpIo"/>
+<div class="p-5">
+<span class="bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block">LIMITED TIME</span>
+<h4 class="text-lg font-bold font-headline mb-1">50% Off Gourmet Dining</h4>
+<p class="text-on-surface-variant text-sm">Experience Jepara's finest culinary delights today.</p>
+</div>
+</div>
+<!-- Promo Banner 2 -->
+<div class="flex-shrink-0 w-[85%] bg-surface-container-low rounded-3xl overflow-hidden relative group">
+<img alt="Team working together" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Three creative professionals collaborating in a bright modern office with large windows and lush green plants in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-kRN2zYF1HFXfk3xC4UuyQudtFCZhW5uf27_kIjx1Em7Va1IvazjMKcX8W_Xa3JYCCNoF7MbwJwcbO9vnk7UVC9ejs8j2fjq0lBfQqioDOt62KiWy8L3Z1JbmC-8QzNyI1jw8OjUSZwIs2JeETdZceMalX0A9mk1NoljbpzTX8jsgPzrenLrDmblC8FPktJHg4EDY5QcgZjUhnUpq2ILYKLpFnspkEejUVug06Y0LuKD59dWAYz6BEt-RTpJXN7xicd0TH0dGbZfZ"/>
+<div class="p-5">
+<span class="bg-tertiary text-on-tertiary text-[10px] font-bold px-3 py-1 rounded-full mb-3 inline-block">ECO-FRIENDLY</span>
+<h4 class="text-lg font-bold font-headline mb-1">Green Ride Rewards</h4>
+<p class="text-on-surface-variant text-sm">Earn double points for every electric ride taken.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Personalized Recommendations -->
+<section class="pb-12">
+<h3 class="text-xl font-bold font-headline text-on-surface mb-6">Nearby Favourites</h3>
+<div class="space-y-4">
+<div class="flex items-center p-4 bg-surface-container-lowest rounded-2xl shadow-sm">
+<div class="w-16 h-16 rounded-xl overflow-hidden mr-4">
+<img alt="Restaurant" class="w-full h-full object-cover" data-alt="Warm cozy restaurant interior with elegant wood tables and soft ambient lighting from hanging Edison bulbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxMskd-hX9EIMhLD9PCmOJ3PK2J8ZFcUGOgkz9yzLAU9yIhkVHEu_3pvrh1zRYEZ6TNXlhWKDf5WSGy8H083i1LUIrTU4Lw4JYBqjNgTjZ2IJMIlhcdtGt_Ue9sB5cvI960MO6zsGaXOhm-YUZF38ZJ2I2DSfWSmNiptEZ4IgwFgZNnDpvCdkzt0We4yuX6Qkk5vzmE4-IdcJclN4N_B4GV-eiElQgbYvGmdKPNzpsG-n9SNnIbzctW3JMu7tAX65dpBJuTAdkOJqp"/>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-on-surface">Jepara Teak Grill</h5>
+<p class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                            4.8 • 1.2 km • Grilled Cuisine
+                        </p>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-emerald-50 text-primary">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="flex items-center p-4 bg-surface-container-lowest rounded-2xl shadow-sm">
+<div class="w-16 h-16 rounded-xl overflow-hidden mr-4">
+<img alt="Coffee Shop" class="w-full h-full object-cover" data-alt="Artistic cup of latte on a rustic wooden table with small green leaves as decoration and natural side light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6CsWNj9Hltd6yaBQWLCNYBmIjcz0G6MSeoq9RUjODZkRqmoeTRpAKF-3e2irWvKCHgL7ddS-7i0f3Ox8BsRHBMiCRQNuOLLVKiqtuy_p_CpqnMJZuCQ4Zujj6SiXgMpE02JHD6mJUV-xLacSEg0eKdKWr3QxWbmbbPd7ZIPBhOEfpcLvb1PLM5Eov7bP3szcO3hTWcUwkB5bZYHg9GlB-nryMiSHNfID3D-eDouMcvFd-jD1Vot9zopa4JKn5SqGyqCAFJnyT3Dwf"/>
+</div>
+<div class="flex-1">
+<h5 class="font-bold text-on-surface">Emerald Brew Coffee</h5>
+<p class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                            4.9 • 0.5 km • Coffee &amp; Pastry
+                        </p>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-emerald-50 text-primary">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,109,54,0.06)] rounded-t-3xl border-t border-emerald-900/5">
+<!-- Home Active -->
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-100 rounded-2xl px-5 py-2 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-inter text-xs font-semibold">Home</span>
+</a>
+<!-- Activity Inactive -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-inter text-xs font-semibold">Activity</span>
+</a>
+<!-- Chat Inactive -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-inter text-xs font-semibold">Chat</span>
+</a>
+<!-- Profile Inactive -->
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-xs font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

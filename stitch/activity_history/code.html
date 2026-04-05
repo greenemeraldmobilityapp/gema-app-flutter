@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEMA - Aktivitas</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#006d36",
+                    "on-primary-fixed": "#00210c",
+                    "surface-variant": "#dee4db",
+                    "inverse-surface": "#2b322c",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#7ed99e",
+                    "secondary-fixed": "#9af6b8",
+                    "surface-tint": "#006d36",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#005025",
+                    "on-tertiary-container": "#554200",
+                    "surface-bright": "#f5fbf1",
+                    "secondary": "#006d3d",
+                    "on-secondary-fixed-variant": "#00522d",
+                    "on-secondary-container": "#047240",
+                    "surface": "#f5fbf1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00210f",
+                    "on-surface": "#171d17",
+                    "error": "#ba1a1a",
+                    "primary-container": "#50c878",
+                    "inverse-on-surface": "#ecf3e9",
+                    "tertiary-fixed-dim": "#f1c100",
+                    "tertiary-container": "#d8ad00",
+                    "surface-dim": "#d5dcd2",
+                    "surface-container-low": "#eff6ec",
+                    "background": "#f5fbf1",
+                    "primary-fixed-dim": "#66dd8b",
+                    "primary-fixed": "#83fba5",
+                    "on-background": "#171d17",
+                    "outline": "#6e7a6e",
+                    "tertiary-fixed": "#ffe08b",
+                    "surface-container": "#e9f0e6",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "on-tertiary-fixed": "#241a00",
+                    "tertiary": "#745b00",
+                    "surface-container-high": "#e3eae0",
+                    "inverse-primary": "#66dd8b",
+                    "surface-container-highest": "#dee4db",
+                    "on-surface-variant": "#3e4a3f",
+                    "secondary-container": "#97f3b5",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdcabc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .wood-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 Q 25 5, 40 10 T 70 10 T 100 10 M0 30 Q 15 25, 30 30 T 60 30 T 90 30 M20 50 Q 35 45, 50 50 T 80 50 T 110 50 M10 70 Q 25 65, 40 70 T 70 70 T 100 70 M0 90 Q 15 85, 30 90 T 60 90 T 90 90' fill='none' stroke='%23006d36' stroke-width='0.5'/%3E%3C/svg%3E");
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<div class="fixed inset-0 wood-pattern opacity-[0.02] pointer-events-none"></div>
+<!-- TopAppBar -->
+<header class="bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md font-manrope font-bold tracking-tight docked full-width top-0 sticky z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400">menu</span>
+<h1 class="text-2xl font-black text-emerald-800 dark:text-emerald-100">GEMA</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border-2 border-primary/10">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="User profile avatar showing a professional person with a friendly expression in soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChpJxXWxt5SRslY7OTqcub4i50uaP1t73B-OZGSkGkrIMW8axGFCoYPR7iSQIyrGlm3cfXBxy40dCyZK7bdVT5-8ZF22uHEaT5rEVLlJm_TV0U_0J1-vNpvqXmfBy8moXvc-3A0ldidY75dHPtaHfRz_EaGG0qJ7SBdQnsdlDydsXEsWqtn6ERFnhtZqYlhwKwaL7GeLZdqgVfZxXgVHPD3YwHf-XAJvvDQ1UIFPN88Z7oDZjo4TbUN41132Rc__4YXc1I8cUMcBIh"/>
+</div>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 pt-6 pb-32">
+<!-- Editorial Header -->
+<section class="mb-8">
+<h2 class="text-4xl font-headline font-extrabold text-primary mb-2 tracking-tight">Aktivitas Anda</h2>
+<p class="text-on-surface-variant font-medium">Pantau status pesanan dan riwayat mobilitas Jepara Anda.</p>
+</section>
+<!-- Tabs Navigation -->
+<nav class="flex p-1 bg-surface-container-low rounded-2xl mb-8 w-fit gap-2">
+<button class="px-8 py-3 rounded-xl font-headline font-bold text-sm bg-primary text-on-primary transition-all shadow-sm">
+                Ongoing
+            </button>
+<button class="px-8 py-3 rounded-xl font-headline font-bold text-sm text-on-surface-variant hover:bg-surface-container-high transition-all">
+                History
+            </button>
+</nav>
+<!-- Ongoing Orders List -->
+<div class="space-y-6">
+<!-- Order Card 1: OTW -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 transition-all hover:shadow-lg flex flex-col md:flex-row gap-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:bg-primary/10 transition-colors"></div>
+<div class="w-full md:w-48 h-32 rounded-xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A modern green electric shuttle bus driving through a clean urban environment in Jepara at midday" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDccUuJnY3eNMGzAkGxLxBM6mROlUko7tK9P3cpyF3qBhCG3FDcK0dgtRZw3bgyLl1bcNXTLjgedo0gMF2ct6rpPxBwpREO4Ugcu7Rm-nbsGMBbGcZBYXqV1BirjjdR996w_EaD_9l7TmejU4RotPB85BhgnSI801DzvQidpgdW28aRXBoli9liKbuk_UL6NoD_rxPHvGxzXniiFTVw8UqZwlJz1EaE8tlNaOAwQVnZnqaBRtvCVe8XWHJVsQLys64HhpT7y0zWdHX"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container uppercase tracking-wider">
+                                OTW
+                            </span>
+<span class="text-on-surface-variant text-sm font-medium">24 Okt, 14:20</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold text-on-surface mb-1">Shuttle Listrik Premium</h3>
+<p class="text-on-surface-variant text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Pusat Ukir Jepara → Pantai Bandengan
+                        </p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-4 border-t border-surface-container-high">
+<div>
+<p class="text-xs text-on-surface-variant font-semibold uppercase tracking-tighter">Total Bayar</p>
+<p class="text-lg font-headline font-black text-primary">Rp 45.000</p>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-sm shadow-sm hover:opacity-90 transition-all">
+                            Track Order
+                        </button>
+</div>
+</div>
+</div>
+<!-- Order Card 2: Pending -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 transition-all hover:shadow-lg flex flex-col md:flex-row gap-6 relative overflow-hidden group">
+<div class="w-full md:w-48 h-32 rounded-xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Interior of a luxury artisan wood workshop with sunlight streaming through windows highlighting sawdust and tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVlKVxXNPt9MxNw28YKqJaBFgIAlRtuQVrQoPqPCrHZJi5VEOf-GX6453J_JsHEwtfAiI_xb4yTo8u-Bxl3715C0uHu8pekhqIrJM8uj3_OjSLpCj2eHYDFdb2PcTiEiTcqw_m1KyAIbWPIfWMmnDzFNM21Cx4roiUk1VcMhY14SR5cMovJroyY4m_ySFt92jNIM8fCqpELe4ls3Y_RZIEehgjIFXfSLQl141kJsTVCZezpp5q-gONbJUFIxOwk_HHe_Fomh8ATinD"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-tertiary-container text-on-tertiary-container uppercase tracking-wider">
+                                Pending
+                            </span>
+<span class="text-on-surface-variant text-sm font-medium">24 Okt, 15:45</span>
+</div>
+<h3 class="text-xl font-headline font-extrabold text-on-surface mb-1">Antaran Mebel Jati</h3>
+<p class="text-on-surface-variant text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">inventory_2</span>
+                            1x Kursi Ukir Jepara Klasik
+                        </p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-4 border-t border-surface-container-high">
+<div>
+<p class="text-xs text-on-surface-variant font-semibold uppercase tracking-tighter">Total Bayar</p>
+<p class="text-lg font-headline font-black text-primary">Rp 1.250.000</p>
+</div>
+<button class="bg-surface-container-highest text-on-surface px-5 py-2 rounded-lg font-bold text-sm hover:bg-surface-container-high transition-all">
+                            Details
+                        </button>
+</div>
+</div>
+</div>
+<!-- Bento Layout section for secondary info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+<div class="bg-primary text-on-primary rounded-3xl p-8 flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-4xl opacity-50" style="font-variation-settings: 'FILL' 1;">eco</span>
+<div>
+<h4 class="text-2xl font-headline font-bold mb-1">Eco-Traveler</h4>
+<p class="text-on-primary/80 text-sm">Anda telah menghemat 12kg emisi karbon minggu ini dengan layanan GEMA.</p>
+</div>
+</div>
+<div class="bg-secondary-container text-on-secondary-container rounded-3xl p-8 flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-4xl opacity-50">confirmation_number</span>
+<div>
+<h4 class="text-2xl font-headline font-bold mb-1">Voucher Aktif</h4>
+<p class="text-on-secondary-container/80 text-sm">Gunakan kode GEMAUKIR untuk diskon 15% perjalanan berikutnya.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md rounded-t-3xl border-t border-emerald-900/5 shadow-[0_-4px_24px_rgba(0,109,54,0.06)]">
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-inter text-xs font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-100 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="analytics" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-inter text-xs font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-inter text-xs font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-xs font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

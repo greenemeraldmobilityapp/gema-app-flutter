@@ -1,0 +1,16 @@
+build/
+.dart_tool/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.android/
+.ios/
+.web/
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store

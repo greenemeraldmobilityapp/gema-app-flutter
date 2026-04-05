@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEMA - Profil Pengguna</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.jepara-pattern {
+    background-color: #f5fbf1;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBGPHS_w020dJCLQnf7JNceOqtMpXk3o1ypu_3fgUEI4lO7ScFjafXgHJ6Mzle5-wQ8XXB9vLWGHbjnwLazyVuI9elnuL0OP0nRwzDZpD6d2kctGj_U5b8vjOGwKjgltXc4Rx3OsQIFXqZhiaQCe3bQ_xSh4YFK_1ijWmQ4bwpFfi_IBFUSBMdk88GavXid3r92CG19fg6ccgJTVCywJXPvWEzOqBZSEdfIZWm7Zs78BGv3SyEqiAwOgbfRVYTMn9e6qpDndW41Ns0m);
+    background-blend-mode: overlay;
+    opacity: 0.98
+    }
+.editorial-shadow {
+    box-shadow: 0 24px 48px -12px rgba(0, 109, 54, 0.08)
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px)
+    }</style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006d36",
+                        "outline-variant": "#bdcabc",
+                        "primary-fixed-dim": "#66dd8b",
+                        "on-primary-container": "#005025",
+                        "tertiary": "#745b00",
+                        "tertiary-container": "#d8ad00",
+                        "surface-container-low": "#eff6ec",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "background": "#f5fbf1",
+                        "tertiary-fixed": "#ffe08b",
+                        "on-tertiary-fixed-variant": "#584400",
+                        "surface-variant": "#dee4db",
+                        "surface-tint": "#006d36",
+                        "surface-container": "#e9f0e6",
+                        "on-primary-fixed-variant": "#005227",
+                        "tertiary-fixed-dim": "#f1c100",
+                        "on-secondary-container": "#047240",
+                        "on-primary-fixed": "#00210c",
+                        "inverse-surface": "#2b322c",
+                        "surface": "#f5fbf1",
+                        "surface-dim": "#d5dcd2",
+                        "secondary-fixed": "#9af6b8",
+                        "on-background": "#171d17",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e3eae0",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#97f3b5",
+                        "secondary": "#006d3d",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f5fbf1",
+                        "primary-container": "#50c878",
+                        "primary-fixed": "#83fba5",
+                        "secondary-fixed-dim": "#7ed99e",
+                        "on-tertiary-fixed": "#241a00",
+                        "inverse-primary": "#66dd8b",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#dee4db",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#171d17",
+                        "on-tertiary-container": "#554200",
+                        "on-secondary-fixed": "#00210f",
+                        "inverse-on-surface": "#ecf3e9",
+                        "on-surface-variant": "#3e4a3f",
+                        "on-secondary-fixed-variant": "#00522d",
+                        "outline": "#6e7a6e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/20 jepara-pattern min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-50/80 backdrop-blur-xl shadow-sm flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a middle-aged Indonesian man with a warm smile, wearing a batik shirt in a bright office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9LQW5zuNnZ-NSCmiM3WAITlHZ_lS5xHa07M5jxg8SuscR3QBYQdXI1h3QDi8Y2rIlEZnLo-355GMS5h_tZgRTfZEJTBhpVLeUCsuYRfmVCvihL3GAoyngejYvJJWzs6Va4GwUMhb99vnd2cruGXj6CvQOr-0otJ1-PtwXtV8jgjM8oE5yTrD63dRwfM3Xr-mzIacFkZtD13uEAIvviui0cwWqS3wJl8PHvK6ze2EzcAfPeLhPQ6U3J5ibGOQpXL4PmKnJK_uC5q6e"/>
+</div>
+<h1 class="font-manrope font-black text-2xl tracking-tighter text-emerald-900">GEMA</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-emerald-600 hover:bg-emerald-100/50 transition-colors active:duration-150 active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Profile Hero Section: Asymmetric Editorial Layout -->
+<section class="relative mb-12">
+<div class="flex flex-col md:flex-row items-end gap-6">
+<div class="relative group">
+<div class="w-32 h-40 rounded-2xl overflow-hidden shadow-2xl transition-transform hover:-rotate-2">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a man looking confidently into the camera, warm cinematic lighting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ZjkF9DxJUTtkf68Tdneo4tMHmmBdQwhe0mr3cHjP4CUD9wqeXautODgvrYKqqK7nCdG-XNJfJhggmSyDb7o7U1Yof8LeYPor3iHjKYiqpxhqrjgznycFTNVuIHtbCpfMj2kC5u1m4JAYxqG4JZ2FZxVKFWx2dFehc01tbMTvWZXDtgcGNTi0jlLENcsZcQX6GUlYPX72uTVo9CTp-ZV9Na0hni1BJdNB7E9S2f0pp8BeZca-nfXCgh49gTBsvHMkKTghLNahbBYZ"/>
+</div>
+<button class="absolute -bottom-3 -right-3 w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<div class="flex-1 pb-2">
+<h2 class="font-headline font-extrabold text-4xl text-on-surface-variant tracking-tight mb-1">Ahmad Sulaiman</h2>
+<p class="font-body text-outline font-medium tracking-wide">+62 812 3456 7890</p>
+</div>
+</div>
+</section>
+<!-- Emerald Wallet Bento-ish Card -->
+<section class="mb-10">
+<div class="bg-gradient-to-br from-primary to-primary-container p-8 rounded-3xl text-on-primary editorial-shadow relative overflow-hidden">
+<!-- Subtle texture overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none jepara-pattern"></div>
+<div class="relative z-10 flex flex-col gap-6">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label uppercase text-[10px] font-bold tracking-[0.2em] opacity-80 mb-1">Emerald Wallet</p>
+<h3 class="font-headline font-bold text-3xl tracking-tight">Rp 2.450.000</h3>
+</div>
+<div class="bg-white/20 backdrop-blur-md p-3 rounded-2xl">
+<span class="material-symbols-outlined text-3xl" data-icon="account_balance_wallet" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-white/20 hover:bg-white/30 transition-colors backdrop-blur-sm py-3 rounded-xl font-label font-semibold text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="add_circle">add_circle</span>
+                            Top Up
+                        </button>
+<button class="bg-white/20 hover:bg-white/30 transition-colors backdrop-blur-sm py-3 rounded-xl font-label font-semibold text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="history">history</span>
+                            Detail
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Menu Groups -->
+<div class="space-y-8">
+<!-- Account Section -->
+<div>
+<h4 class="font-headline font-bold text-lg text-emerald-900 mb-4 px-2">Pengaturan Akun</h4>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden shadow-sm">
+<button class="w-full flex items-center justify-between p-5 hover:bg-emerald-100/50 transition-all group border-b border-white/50">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-2xl flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Alamat Saya</p>
+<p class="text-xs text-outline">Kelola lokasi penjemputan utama</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 hover:bg-emerald-100/50 transition-all group border-b border-white/50">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-2xl flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Riwayat Transaksi</p>
+<p class="text-xs text-outline">Lihat semua perjalanan dan pembayaran</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 hover:bg-emerald-100/50 transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-2xl flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Pengaturan Aplikasi</p>
+<p class="text-xs text-outline">Notifikasi, bahasa, dan privasi</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Support Section -->
+<div>
+<h4 class="font-headline font-bold text-lg text-emerald-900 mb-4 px-2">Bantuan</h4>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden shadow-sm">
+<button class="w-full flex items-center justify-between p-5 hover:bg-emerald-100/50 transition-all group border-b border-white/50">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-2xl flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Pusat Bantuan</p>
+<p class="text-xs text-outline">FAQ dan panduan pengguna</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 hover:bg-emerald-100/50 transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-2xl flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface">Hubungi Kami</p>
+<p class="text-xs text-outline">Chat langsung dengan admin GEMA</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Logout -->
+<button class="w-full mt-4 flex items-center justify-center gap-3 p-5 bg-error-container text-on-error-container rounded-2xl font-headline font-bold hover:bg-error-container/80 transition-colors active:scale-[0.98]">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                Logout
+            </button>
+</div>
+<p class="mt-12 text-center text-outline text-xs font-label uppercase tracking-widest opacity-60">GEMA v2.4.0 • Crafted in Jepara</p>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-emerald-50/90 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,109,54,0.06)] rounded-t-2xl z-50">
+<a class="flex flex-col items-center justify-center text-emerald-800/50 px-4 py-1.5 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-manrope text-[10px] font-semibold uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 px-4 py-1.5 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="font-manrope text-[10px] font-semibold uppercase tracking-widest">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-800/50 px-4 py-1.5 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-manrope text-[10px] font-semibold uppercase tracking-widest">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 text-emerald-900 rounded-xl px-4 py-1.5 transition-all Active: scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-manrope text-[10px] font-semibold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

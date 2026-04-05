@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-secondary-fixed-variant": "#00522d",
+                    "inverse-primary": "#66dd8b",
+                    "on-surface-variant": "#3e4a3f",
+                    "on-secondary-fixed": "#00210f",
+                    "on-tertiary-container": "#554200",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ecf3e9",
+                    "tertiary": "#745b00",
+                    "primary-container": "#50c878",
+                    "surface-tint": "#006d36",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f5fbf1",
+                    "tertiary-fixed-dim": "#f1c100",
+                    "on-primary-fixed": "#00210c",
+                    "inverse-surface": "#2b322c",
+                    "tertiary-container": "#d8ad00",
+                    "on-surface": "#171d17",
+                    "surface-dim": "#d5dcd2",
+                    "surface": "#f5fbf1",
+                    "secondary": "#006d3d",
+                    "on-background": "#171d17",
+                    "primary": "#006d36",
+                    "surface-container-low": "#eff6ec",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "outline": "#6e7a6e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#005025",
+                    "surface-container": "#e9f0e6",
+                    "primary-fixed": "#83fba5",
+                    "primary-fixed-dim": "#66dd8b",
+                    "secondary-fixed-dim": "#7ed99e",
+                    "surface-variant": "#dee4db",
+                    "surface-container-highest": "#dee4db",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdcabc",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffe08b",
+                    "secondary-container": "#97f3b5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#9af6b8",
+                    "on-secondary-container": "#047240",
+                    "background": "#f5fbf1",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e3eae0",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .jepara-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c13.807 0 25 11.193 25 25S43.807 55 30 55 5 43.807 5 30 16.193 5 30 5zm0 5c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z' fill='%23006d36' fill-opacity='0.02'/%3E%3C/svg%3E");
+        }
+        .map-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(245, 251, 241, 0) 60%, rgba(245, 251, 241, 1) 100%);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #006d36 0%, #50c878 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col jepara-pattern overflow-hidden">
+<!-- TopAppBar Segment (Using Shared Components Logic) -->
+<header class="bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-md text-emerald-600 dark:text-emerald-400 font-manrope font-bold tracking-tight docked full-width top-0 sticky z-50 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-emerald-100/50 dark:hover:bg-emerald-900/30 transition-colors scale-95 active:duration-150 p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-2xl font-black text-emerald-800 dark:text-emerald-100">GEMA</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-primary-container overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a friendly man with a professional look, soft natural lighting, high-end photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UCZNFAjRgz4ZMgYSHyoNeCoSWjcfxQC168rC2L_jF8Rp5xuDZAEKE3lJUsoPTU31E7y519xjXUvMUDDBDrqslJsCmAqA7xfcvYkNNf8Tqw5eNjjM5m0IHkAVA8BzkLVy6H-CBCUX5DLaVsqDrbCZxRh64xZe2LLdBoMaPakhxr0z9SeQ1bI2BPL5ncTxd_Jq7cJAHpV74Z_ZxHBLYb89Hjf3a51pAdGemyqNZ_391HykkNz0npJu3Z_yB21uRLluWTh0kBgHn_LP"/>
+</div>
+</div>
+</header>
+<main class="flex-grow relative flex flex-col">
+<!-- Map Section (Top 50%) -->
+<section class="h-[486px] relative w-full overflow-hidden">
+<div class="absolute inset-0 bg-surface-container">
+<!-- Map Placeholder with Location context -->
+<div class="w-full h-full" data-location="Jepara, Indonesia" style="">
+<img alt="Map view" class="w-full h-full object-cover grayscale-[20%] contrast-[90%]" data-alt="Detailed minimalist satellite map showing city streets and a highlighted green delivery route in a tropical urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA6xlrOMiFCy6a-BgxifPAlj9V2N09S-bXMJfdVs57WFHiUI0Z8HUBmnw4lh5eJzgduO5eli1eANnh1ayZWrhqONMOiYBysdUebHVw8L0Y08MJNyTi9lTPU06MPkBNvko3YaCApHPMpHRpC2T7_z9p1-lB9ZydGx4WpkYsJewN5-Q1eRxt6NGHRCwz7s16cCqxEaITlmdumHohxzEgoAATXMnwB9Glu05-vfV9BOco8NRrANrANUgnazC4QNSx0Fd7tFVdYalGZTC1"/>
+</div>
+</div>
+<!-- Floating Map Pins -->
+<div class="absolute top-[40%] left-[30%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
+<div class="bg-white p-1 rounded-full shadow-lg border-2 border-primary">
+<div class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-on-primary">
+<span class="material-symbols-outlined" data-icon="motorcycle" style="font-variation-settings: 'FILL' 1;">motorcycle</span>
+</div>
+</div>
+<div class="w-1 h-4 bg-primary/40 rounded-full mt-1"></div>
+</div>
+<div class="absolute top-[30%] right-[35%] z-10">
+<div class="relative">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-md" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="absolute -top-8 -right-12 bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm border border-outline-variant/10">
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Destination</p>
+</div>
+</div>
+</div>
+<!-- Fade to Bottom Sheet -->
+<div class="absolute bottom-0 left-0 right-0 h-32 map-gradient-overlay pointer-events-none"></div>
+</section>
+<!-- Floating Bottom Sheet (Bottom 50%) -->
+<section class="flex-grow bg-surface/80 backdrop-blur-xl rounded-t-[2.5rem] -mt-12 z-20 shadow-[0_-12px_40px_rgba(0,109,54,0.1)] flex flex-col px-8 pt-4 pb-10">
+<!-- Pull Handle -->
+<div class="w-12 h-1.5 bg-outline-variant/30 rounded-full self-center mb-8"></div>
+<!-- Status & ETA Header -->
+<div class="flex justify-between items-start mb-8">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full mb-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[11px] font-bold uppercase tracking-tighter font-label">OTW</span>
+</div>
+<h1 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight leading-none">12 <span class="text-xl font-medium text-on-surface-variant">min</span></h1>
+<p class="text-on-surface-variant text-sm font-medium">Estimated arrival at 2:45 PM</p>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest flex items-center justify-center shadow-sm border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="delivery_dining" style="font-variation-settings: 'FILL' 0;">delivery_dining</span>
+</div>
+</div>
+<!-- Driver Profile Card -->
+<div class="bg-surface-container-low rounded-[1.5rem] p-5 mb-8 flex items-center gap-4 group hover:bg-surface-container transition-colors">
+<div class="relative">
+<img alt="Driver Photo" class="w-14 h-14 rounded-full object-cover" data-alt="Close up portrait of a professional delivery rider smiling, wearing a clean uniform, outdoor daytime setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFWv02n70YZXigXPrCBrqtDuXIlz0PFPDDEGU5ta8BZND2zR-c1xxzRBUlK__hhJD_LJUQmBwSqH4tvp4Ku8aKy7FI0q5_sEKoZlMgmGJW-bvetG9PK-R-M7hPJwTuHsW-g-xfKAFqaSI8EO7NY4VeTs1ZbZgYqiAY3c-1fFfEeib1RTE-eq7ED85s_ACrngIz9z6aiPC9dnkUHLjYJKTL42L3w8uNIPuaupPOlTgIwJgAwteKpfg8a3fGL9ZicWLLxhQjfdMqW_gj"/>
+<div class="absolute -bottom-1 -right-1 bg-primary border-2 border-surface-container-low w-5 h-5 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[10px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold text-on-surface">Ahmad Wijaya</h3>
+<div class="flex items-center gap-2">
+<span class="text-xs text-on-surface-variant font-medium bg-surface-container-highest px-2 py-0.5 rounded uppercase tracking-wide">K 2024 GP</span>
+<span class="text-xs text-on-surface-variant">•</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-tertiary text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">4.9</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-4 mt-auto">
+<button class="flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-surface-container-highest text-on-surface font-headline font-bold hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                    Chat
+                </button>
+<button class="signature-gradient flex items-center justify-center gap-2 py-4 px-6 rounded-2xl text-on-primary font-headline font-bold shadow-lg shadow-primary/20 hover:opacity-90 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                    Call
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Using Shared Components Logic) - Hidden for task-focused tracking screen -->
+<!-- Suppressed based on "The Destination Rule": This is a task-focused screen (tracking) -->
+</body></html>

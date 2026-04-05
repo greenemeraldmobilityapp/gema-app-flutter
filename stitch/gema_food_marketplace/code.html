@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GEMA - Jepara Local Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#005227",
+                    "on-secondary-fixed-variant": "#00522d",
+                    "inverse-primary": "#66dd8b",
+                    "on-surface-variant": "#3e4a3f",
+                    "on-secondary-fixed": "#00210f",
+                    "on-tertiary-container": "#554200",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ecf3e9",
+                    "tertiary": "#745b00",
+                    "primary-container": "#50c878",
+                    "surface-tint": "#006d36",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f5fbf1",
+                    "tertiary-fixed-dim": "#f1c100",
+                    "on-primary-fixed": "#00210c",
+                    "inverse-surface": "#2b322c",
+                    "tertiary-container": "#d8ad00",
+                    "on-surface": "#171d17",
+                    "surface-dim": "#d5dcd2",
+                    "surface": "#f5fbf1",
+                    "secondary": "#006d3d",
+                    "on-background": "#171d17",
+                    "primary": "#006d36",
+                    "surface-container-low": "#eff6ec",
+                    "on-tertiary-fixed-variant": "#584400",
+                    "outline": "#6e7a6e",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#005025",
+                    "surface-container": "#e9f0e6",
+                    "primary-fixed": "#83fba5",
+                    "primary-fixed-dim": "#66dd8b",
+                    "secondary-fixed-dim": "#7ed99e",
+                    "surface-variant": "#dee4db",
+                    "surface-container-highest": "#dee4db",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#bdcabc",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffe08b",
+                    "secondary-container": "#97f3b5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#9af6b8",
+                    "on-secondary-container": "#047240",
+                    "background": "#f5fbf1",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e3eae0",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5fbf1
+    }
+.font-headline {
+    font-family: "Manrope", sans-serif
+    }
+.jepara-pattern {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDQsn9Ds7Z3l3y3bYBPcHfVW0JpbcPktvZyb5GzJgViZS4UTtoOcZdCoVflZGm1tQmR4LTi3f7fnRH1mk2pf0eSu1t-KtgjQN-ZzwDtp78Wa_N1uE-1Aa0QqGgZD8I7a7b2wJ6q4lmzN67Uw6uAWu4aGVeMwWN2utQuC5IjFekknYND8KgyGwha2U53Ea2Fol4R8-f74NGnOtwkNi6uGgegp_gcgtcraRgYYJCckXW8cTf7OZWiQQzk1USST286h2r1u--kEGdbSEYs);
+    opacity: 0.02;
+    pointer-events: none
+    }
+.signature-gradient {
+    background: linear-gradient(135deg, #006d36 0%, #50c878 100%)
+    }
+.glass-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.8)
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- Jepara Subtle Texture Overlay -->
+<div class="fixed inset-0 jepara-pattern z-0"></div>
+<!-- TopAppBar -->
+<header class="docked full-width top-0 sticky z-50 bg-emerald-50/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-emerald-600 hover:bg-emerald-100/50 transition-colors p-2 rounded-full" data-icon="menu">menu</button>
+<h1 class="text-2xl font-black text-emerald-800 tracking-tight font-headline">GEMA</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-6 mr-4">
+<a class="font-inter text-sm font-semibold text-emerald-700" href="#">Home</a>
+<a class="font-inter text-sm font-semibold text-zinc-600 hover:text-emerald-600 transition-all" href="#">Activity</a>
+<a class="font-inter text-sm font-semibold text-zinc-600 hover:text-emerald-600 transition-all" href="#">Chat</a>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User Profile" data-alt="Close up portrait of a smiling young Indonesian man in a clean white studio setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ2eWYbze9MFmAxwhdQ8G24Zc7vnkXYKdB4LjRtchbtcnrQQlEkph0jiK4bW7fgF57qTRnBccbga1uPZkOoJxxgWHtkOIwvzlAFZRAIW3eMOEVYttAt3xOzsojvtoAsvHdXcWW9nQt_BQRW27xUSzfmq5UZJPd1MvArBgwpjNVC-VdtcDOOfm4Y0ntk1FWFk3gLwkJUS8MspPtJq3OLxGQu0Ao7nTqSMlykrStw5vWnTUdF6ymee5G8CgNzST--_U8gv7WX4dnPW86"/>
+</div>
+</div>
+</header>
+<main class="relative z-10 max-w-7xl mx-auto px-6 pb-32 pt-8">
+<!-- Hero Search Section -->
+<section class="mb-12">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface tracking-tight mb-6">
+                    Discover Jepara’s <br/><span class="text-primary">Authentic Crafts.</span>
+</h2>
+<div class="relative flex items-center group">
+<span class="material-symbols-outlined absolute left-4 text-outline" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-5 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/40 transition-all text-on-surface placeholder:text-outline" placeholder="Search furniture, carvings, or local food..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="mb-10 overflow-x-auto no-scrollbar">
+<div class="flex gap-3 pb-2">
+<button class="px-6 py-2.5 rounded-full signature-gradient text-on-primary font-semibold text-sm whitespace-nowrap">All</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all font-semibold text-sm whitespace-nowrap">Culinary</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all font-semibold text-sm whitespace-nowrap">Furniture</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all font-semibold text-sm whitespace-nowrap">Fashion</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all font-semibold text-sm whitespace-nowrap">Crafts</button>
+</div>
+</section>
+<!-- Merchant Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Featured Card (Asymmetric Span) -->
+<div class="lg:col-span-2 group cursor-pointer">
+<div class="relative rounded-xl overflow-hidden aspect-[16/9] lg:aspect-[21/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury mahogany hand-carved dining set in a sunlit traditional Jepara workshop with dust motes dancing in light beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaUiOldLpTA6zaZC8KT6okZ1WRm1dB8AGHshpw6bjK3CuhyeZk_M6P455ndiH3mZLPqx6I79GE1HiQI7SdwumyirX8X9x-UGme0Q9RPFkHVJDpxJRgJElYewr0n0h5QbSB6NiVuUTK2V2clBbzJxj78E4h-Fz10qlH-hdRC85S3UIm0wE3FLSe6v1o6VGjaTZJm_JAGIhsoeuzhI_KslxTAxVgMeeYGqnD_emhQeVqUEcFuFeEvBdAIijG9VHWb34p-8S2SQl4iat-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block uppercase tracking-wider">Premium Selection</span>
+<h3 class="text-3xl font-headline font-bold">Jati Lawas Artistry</h3>
+<div class="flex items-center gap-3 mt-2">
+<div class="flex items-center gap-1 bg-white/20 backdrop-blur-md px-2 py-0.5 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.9</span>
+</div>
+<span class="text-sm opacity-90">Jepara City • 1.2 km</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col group hover:bg-surface-container-high transition-all">
+<div class="relative aspect-square rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cozy local restaurant interior in Jepara serving traditional seafood with warm ambient lighting and wooden furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkTru8N9z7mMigEB5I-S-t1g3u0-E6KMX0WvGT-agSeCn7wUoDzvVrpzpb0NfvIN89VIsZ7UJTuLa5r8XYAyhzqB3DPf3oLLn9J_EK_nwxYVhxcvmqSgHGPwWo00pWLEHDnYyd6zsEn12brPJBqsmoFtxCA812fN8a5yO2nt-t85vIUcZeuHRgW_9x4OxmAfG6dFuRnc3Q9LFZtAZEOgEOat4YQpZ_O0iEdgRmMJKHYl-XxoCzp33yzL0sWwiqhh6BZ0Mx3WameveL"/>
+<div class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-2 py-1 rounded-lg text-xs font-bold">ECO CHOICE</div>
+</div>
+<h4 class="text-lg font-bold font-headline text-on-surface">Pindang Serani Bu Aminah</h4>
+<p class="text-on-surface-variant text-sm mt-1">Authentic Jepara Seafood</p>
+<div class="mt-auto pt-4 flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.8</span>
+<span class="text-xs text-outline ml-1">(120+ reviews)</span>
+</div>
+<span class="text-xs font-semibold text-primary">0.5 km</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col group hover:bg-surface-container-high transition-all">
+<div class="relative aspect-square rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal hand-woven batik fabric with intricate green and gold patterns draped over a teak wood stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2tgkeQgqa27NpNR9idLtsTnjSmR3soRrt20db6CgF8mAya1R8cIsIO4EzwTDN_mkjTzyI30ELfVuEuo5df4egiZpDSG2StspuUlF1noDhXpsZg5zgdCaK9VtJ0rX0-HlQeqZ3ufLDNB28sZqfq-wDNWR0vXllNIS-lPso8G1IyAb-eVQqw-xVIvX1NNcpp-0YH8DmirFd8nmUYakZ0TLz8ifj6R2nSlJWfRtgC0ijEh2SCXjYCsgGvKwoYHpcWVTW7IewoHU6x1wO"/>
+</div>
+<h4 class="text-lg font-bold font-headline text-on-surface">Tenun Troso Gallery</h4>
+<p class="text-on-surface-variant text-sm mt-1">Hand-woven Textiles</p>
+<div class="mt-auto pt-4 flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.7</span>
+<span class="text-xs text-outline ml-1">(85 reviews)</span>
+</div>
+<span class="text-xs font-semibold text-primary">2.8 km</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col group hover:bg-surface-container-high transition-all">
+<div class="relative aspect-square rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Collection of small hand-carved wooden sculptures and home decor items on a minimalist shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTxMU_h1imLcFwEvlklkVaJmnh6XPAzNB5kZXpS7n16_-g0s4vZvSn3cLLyNDbhU9Hv_bZXrfK82yqHA1bg7r15LkPrwfb_auRA8YiBt7AqPU8g8Qn9g7YUnnpMWYoL6Sb70g64ZCLfDyLKukNueRH7K_dAj_0qwZ7R1c67wgU-QJT6yocbVyaCipgoyS3I3XeyBVWln738T0RlILMXfSYQ9Ugmd3HvtYxdb4kdp2moyINOhftvUEbeew_eSn-zolTLqmzgcva33yq"/>
+</div>
+<h4 class="text-lg font-bold font-headline text-on-surface">Ukiran Mandiri</h4>
+<p class="text-on-surface-variant text-sm mt-1">Custom Wood Carvings</p>
+<div class="mt-auto pt-4 flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.9</span>
+<span class="text-xs text-outline ml-1">(200+ reviews)</span>
+</div>
+<span class="text-xs font-semibold text-primary">1.5 km</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col group hover:bg-surface-container-high transition-all">
+<div class="relative aspect-square rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Street food stall in Jepara at night with glowing lanterns and fresh local snacks neatly arranged" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFEBeYguqkNGhpSyURYQ0xq6nwk0G-UftIFAZmsli379n4RyJ99z3dn3Q8WeXI-yDJ6fE__ua6jabHPOQ-1K0FJlqWXy5IJsvEBIHwDiKQgraiGDfi2ysXUSTi41oz7T0qFy64PT5DfwbU4I0Z2-BlqB6X2vPNYRD9gToQ-hNUwIE6vbCLcVsMh-BICwz0EX-kSZ-cTz_6vF0tYWmRNHyLTMSgxvqsM6nK9ndBIKDRoem34mU0xWlMd9xdhcWuMSokAPG3LHus8p_z"/>
+</div>
+<h4 class="text-lg font-bold font-headline text-on-surface">Kuliner Alun-Alun</h4>
+<p class="text-on-surface-variant text-sm mt-1">Local Snacks &amp; Drinks</p>
+<div class="mt-auto pt-4 flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.6</span>
+<span class="text-xs text-outline ml-1">(340 reviews)</span>
+</div>
+<span class="text-xs font-semibold text-primary">0.2 km</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button: Cart -->
+<button class="fixed bottom-28 right-6 z-50 signature-gradient text-on-primary w-16 h-16 rounded-full shadow-[0_12px_32px_rgba(0,109,54,0.3)] flex items-center justify-center transition-transform active:scale-90 md:bottom-10">
+<span class="material-symbols-outlined text-3xl" data-icon="shopping_cart">shopping_cart</span>
+<div class="absolute -top-1 -right-1 bg-tertiary text-on-tertiary text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-surface">3</div>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-emerald-50/80 backdrop-blur-md rounded-t-3xl border-t border-emerald-900/5 shadow-[0_-4px_24px_rgba(0,109,54,0.06)] md:hidden">
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-100 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-inter text-xs font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-inter text-xs font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-inter text-xs font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 dark:text-zinc-400 px-5 py-2 hover:text-emerald-600 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-xs font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>
